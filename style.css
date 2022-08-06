@@ -767,6 +767,11 @@ footer{
 
     .header-right{
         margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .header-tag{
+        margin-left: -1rem;
     }
 
     .header-left{
@@ -777,20 +782,23 @@ footer{
         margin-top: 1rem;
     } */
 
-
-    /* #about{
-        margin-top: 5rem;
+    #about{
+        margin-top: 8rem;
     }
     
     .about-title{
-        top: -4rem;
-    } */
+        top: -7rem;
+    }
 
     .about-container{
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
+    .about-right{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .about-right p{
         width: 100%;
     }
@@ -844,7 +852,7 @@ footer{
     .footer-links{
         flex-direction: column;
         gap: 2rem;
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
     }
 }
 
