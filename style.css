@@ -242,7 +242,7 @@ header{
 .header-frames{
     position: absolute;
     top: 88vh;
-    right: 44rem;
+    right: 50rem;
     transition: var(--transition);
 }
 
@@ -337,7 +337,7 @@ header{
 
 .about-title{
     position: absolute;
-    top: -17rem;
+    top: -5rem;
     z-index: 1;
 }
 
@@ -477,7 +477,12 @@ header{
 }
 
 .exhibitions-head > p{
+    margin-top: 2.5rem;
     width: 45rem;
+}
+
+.exhibitions-head > p span{
+    color: #ff7b02;
 }
 
 .exhibitions-btn{

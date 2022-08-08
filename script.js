@@ -64,12 +64,3 @@ if(document.body.clientWidth < 1024){
 }
 
 
-// contact button
-
-const textButtons = document.querySelectorAll('.contact-btn');
-
-textButtons.forEach(textButton  => {
-  let text = textButton.querySelector("p");
-  text.innerHTML= text.innerHTML.split('').map((Character, index) => `<span style=" transform: rotate(${index * 12}deg) ">${Character}</span>`).join()
-});
-
