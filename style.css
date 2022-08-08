@@ -628,7 +628,7 @@ footer{
     
     .header-frames{
         top: 90vh;
-        right: 43rem;
+        right: 38%;
     }
     
     .header-frame{
@@ -637,7 +637,7 @@ footer{
     }
     
     .header-frames:hover .header-frame:nth-child(2){
-        left: 14rem;
+        left: 12rem;
     }
 
     .header-btn{
@@ -884,6 +884,7 @@ footer{
         left: 0;
         top: 0;
         filter: saturate(1) brightness(1);
+        width:100%
     }
 
     .about-image:hover .about-images-lg{
@@ -983,6 +984,10 @@ footer{
     .about-container{
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .about-images-lg{
+        width: 98%;
     }
 
     .about-right{

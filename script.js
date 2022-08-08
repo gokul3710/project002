@@ -32,11 +32,13 @@ var swiper = new Swiper(".mySwiper", {
 const nav = document.querySelector('.nav-links');
 const openNavBtn = document.querySelector('#nav-toggle-open');
 const closeNavBtn = document.querySelector('#nav-toggle-close');
+const body = document.body
 
 const openNav = () => {
   nav.style.display = "flex";
   openNavBtn.style.display = 'none';
   closeNavBtn.style.display = 'inline-block';
+  body.style.overflow = 'hidden'
 }
 openNavBtn.addEventListener('click', openNav);
 
@@ -45,11 +47,18 @@ const closeNav = () => {
   nav.style.display = "none";
   openNavBtn.style.display = 'inline-block';
   closeNavBtn.style.display = 'none';
+  body.style.overflow = 'auto'
 }
 closeNavBtn.addEventListener('click', closeNav);
 
 if(document.body.clientWidth < 1024){
   nav.querySelectorAll('li a').forEach(navLink =>{
+    navLink.addEventListener('click', closeNav);
+  })
+}
+
+if(document.body.clientWidth < 1024){
+  nav.querySelector('body').forEach(navLink =>{
     navLink.addEventListener('click', closeNav);
   })
 }
